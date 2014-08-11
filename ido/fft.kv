@@ -1,0 +1,30 @@
+#:kivy 1.0.8 
+   
+
+<FFTmain>:
+	canvas:
+		Color:
+			rgba: 255,255,255,255
+		Rectangle:
+			size: root.width, root.height
+
+	BoxLayout:
+		id: findvol_layout
+		pos: 40, root.height - 250
+		size: root.width - 80, 200
+		spacing: 30
+		orientation:'vertical'
+		TextInput:
+			size_hint: 1, 0.1
+			id: date_ti
+			text: "<Date>  "
+		TextInput:
+			size_hint: 1, 0.1
+			id: city_ti
+			text: "<City>  "
+		Button:
+			size_hint: 1, 0.1
+			text: "GO"
+			on_press: root.displayTopRatedVols()
+
+	

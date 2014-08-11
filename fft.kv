@@ -1,19 +1,40 @@
 #:kivy 1.0.8
 
-<Screen>
-	
+<NewsFeed>
+	BoxLayout:
+		orientation: 'vertical'
+		Button:
+			text: "button"
+			on_press: app.change()
+<FindVol>
+	#BoxLayout:
+	#	orientation: 'vertical'
+	#	Button:
+	#		text: "button2"
+	#		on_press: app.change2()
+
 	canvas:
+		Color:
+			rgba: 255,255,255,255
 		Rectangle:
-			pos: 0, self.height - 37
-			size: self.width, 74
-		
-	Image:
-		source: "images/logo_Icon.png"
-		pos: -320,260
-
-	Label:
-		
-		
-  
-
-
+			size: root.width, root.height
+	GridLayout:
+		BoxLayout:
+			id: findvol_layout
+			size: root.width - 80, 200
+			pos: 40, root.height - 250
+			spacing: 30
+			orientation:'vertical'
+			TextInput:
+				size_hint: 1, 0.05
+				id: date_ti
+				text: "<Date>  "
+			TextInput:
+				size_hint: 1, 0.05
+				id: city_ti
+				text: "<City>  "
+			Button:
+				size_hint: 1, 0.05
+				text: "GO"
+				#on_press: root.displayTopRatedVols()
+				on_press: app.change2()
