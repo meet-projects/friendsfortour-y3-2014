@@ -3,6 +3,10 @@ kivy.require('1.0.8') #our version..
 
 from kivy.app import App
 from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.uix.textinput import TextInput
+from kivy.uix.label import Label
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.button import Button
 
 sm = ScreenManager()
 
@@ -11,6 +15,7 @@ class FindVol(Screen):
 
 class NewsFeed(Screen):
 	pass
+
 
 class FFTApp(App):
 	def build(self):
