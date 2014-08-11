@@ -5,31 +5,39 @@ from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.uix.image import Image
 from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.app import App
+from kivy.lang import Builder
+
 
 sm = ScreenManager()
-screens = [Screen(name='Title {}'.format(i)) for i in range(2)]
 
-sm.switch_to(screens[0])
-# later
-sm.switch_to(screens[1], direction='right')
+#screens = [Screen(name='Title {}'.format(i)) for i in range(2)]
 
-for i in range(2):
-    screen = Screen(name='Title %d' % i)
-    sm.add_widget(screen)
+#sm.switch_to(screens[0])
+#sm.switch_to(screens[1], direction='right')
 
-sm.current = 'Title 2'
+#for i in range(2):
+#	screen = Screen(name='Title %d' % i)
+#	sm.add_widget(screen)
 
-class FFT(ScreenManager):
-	class FindVol(Widget):
-		pass
-	class NewsFeed(Widget):
-		pass
+#sm.current = 'Title 2'
 
-	
+class FindVol(Screen):
+	pass
+class NewsFeed(Screen):
+	pass
+
+#sm.add_widget(FindVol(name='FindAVolunteer'))
+#sm.add_widget(NewsFeed(name='NewsFeed'))	
 
 class FFTApp(App):
 	def build(self):
-		return FFT()
+		self.news = NewsFeed()
+		sm.add_widget(news)
+		self.find = FindVol()
+		return sm
+	def change(self):
+
 
 if __name__ == '__main__':
 	FFTApp().run()
