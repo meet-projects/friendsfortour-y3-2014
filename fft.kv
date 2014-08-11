@@ -18,23 +18,23 @@
 			rgba: 255,255,255,255
 		Rectangle:
 			size: root.width, root.height
-
-	BoxLayout:
-		id: findvol_layout
-		pos: 0, 400
-		size: root.width, root.height- 800
-		spacing: 30
-		orientation:'vertical'
-		TextInput:
-			size_hint: 1, 0.1
-			id: date_ti
-			text: "<Date>  "
-		TextInput:
-			size_hint: 1, 0.1
-			id: city_ti
-			text: "<City>  "
-		Button:
-			size_hint: 1, 0.1
-			text: "GO"
-			#on_press: root.displayTopRatedVols()
-			on_press: app.change2()
+	GridLayout:
+		BoxLayout:
+			id: findvol_layout
+			size: root.width - 80, 200
+			pos: 40, root.height - 250
+			spacing: 30
+			orientation:'vertical'
+			TextInput:
+				size_hint: 1, 0.05
+				id: date_ti
+				text: "<Date>  "
+			TextInput:
+				size_hint: 1, 0.05
+				id: city_ti
+				text: "<City>  "
+			Button:
+				size_hint: 1, 0.05
+				text: "GO"
+				#on_press: root.displayTopRatedVols()
+				on_press: app.change2()
