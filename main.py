@@ -9,7 +9,6 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.scrollview import ScrollView
-from kivy.config import Config
 
 sm = ScreenManager()
 

@@ -1,47 +1,50 @@
 #:kivy 1.8.0
 
 <NewsFeed>
+	background_color: 1,1,1,1
 	#BoxLayout:
 	#	orientation: 'vertical'
 	#	Button:
 	#		text: "button"
 	#		on_press: app.change()
-
+	
+	canvas:
+		Color:
+			rgba: 255,255,255,255
+		Rectangle:
+			size: root.width, root.height
 	BoxLayout:
 		orientation: 'vertical'
 		AnchorLayout:
-			size_hint: None, None
-			size: root.width, 40
+			size_hint: 1, None
 			anchor_x: 'center'
 			anchor_y: 'top'
+#			Image:
+#				source: 'images/logo.png'
+#				on_touch: app.change()
 			Button:
+				background_down: 'images/logo.png'
+				background_normal: 'images/logo.png'
 				size_hint: None, None
-				size: root.width, 40
-				text: "button"
+				size: 150, 95 
 				on_press: app.change()
 		ScrollView:
 			Label:
 				text_size: self.width, None
 				size_hint_y: None
-				color: .1,.7,.4,1
 				text: "Some really really long string " * 100
 				height: self.texture_size[1]
 
 		BoxLayout:
+			size_hint: None, .2
 			AnchorLayout:
-				size_hint: None, None
-				size: root.width, 40
 				anchor_x: 'left'
 				Button:
-					size_hint: None, None
-					size: root.width, 40
 					text: "button"
 					on_press: app.change()
 			AnchorLayout:
 				anchor_x: 'right'
 				Button:
-					size_hint: None, None
-					size: root.width, 40
 					text: "button"
 					on_press: app.change()
 
