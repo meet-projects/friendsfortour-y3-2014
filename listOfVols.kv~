@@ -10,55 +10,60 @@
 
 	BoxLayout:
 		id: findvol_layout
-		pos: 40, 300
-		size: root.width - 80, root.height - 450
-		spaceing:0.1
+		pos: 40, 20
+		size: root.width - 80, root.height - 40
+		spaceing:1
 		orientation:'vertical'
 		BoxLayout:
 			orientation: 'horizontal'
-			Image:
-				source: "noy.jpg"
-				size_hint: .5, 4
+			Button:
+				size_hint: 1, 0.1
+				text: "Zidan awat"
 			Label:
 				id: vol_rating
 				color: 0, 0, 0, 1
 				size_hint: .5, 0.1
+				text: "9.9"
+			Button:
+				size_hint: 1, 0.1
+				text: "Choose me!!!"
+		BoxLayout:
+			orientation: 'horizontal'
+			Button:
+				size_hint: 1, 0.1
+				text: "Aseel Kassab"
+			Label:
+				id: vol_rating
+				color: 0, 0, 0, 1
+				size_hint: .5, 0.1
+				text: "8.0"
+			Button:
+				size_hint: 1, 0.1
+				text: "Choose me!!!"
+		BoxLayout:
+			orientation: 'horizontal'
+			Button:
+				size_hint: 1, 0.1
 				text: "Noy Galron"
-		BoxLayout:
-			orientation: 'horizontal'
 			Label:
 				id: vol_rating
 				color: 0, 0, 0, 1
 				size_hint: .5, 0.1
-				text: "noygalron@gmail.com"
+				text: "7.0"
 			Button:
-				size_hint: 0.3, 0.1
-				text: "PICK ME UP!!!"
+				size_hint: 1, 0.1
+				text: "Choose me!!!"
 		BoxLayout:
 			orientation: 'horizontal'
-			Label:
-				id: vol_rating
-				color: 0, 0, 0, 1
-				size_hint: 0.4, 0.1
-				text: "Gender: Female"
 			Button:
-				size_hint: 0.5, 0.1
-				text: "City: Nazareth Illit"
-		BoxLayout:
-			orientation: 'horizontal'
+				size_hint: 1, 0.1
+				text: "Ido Silverwater"
 			Label:
 				id: vol_rating
 				color: 0, 0, 0, 1
 				size_hint: .5, 0.1
-				text: "Age: 17"
-		BoxLayout:
-			orientation: 'horizontal'
-			Label:
-				id: vol_rating
-				color: 0, 0, 0, 1
-				size_hint: .5, 0.1
-				text: "Languages: Hebrew, English"
-		
+				text: "6.9"
+			Button:
+				size_hint: 1, 0.1
+				text: "Choose me!!!"
 
-
-			
