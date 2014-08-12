@@ -18,6 +18,22 @@ class FindVol(Screen):
 class NewsFeed(Screen):
 	pass
 
+class NewsFeedScroll(ScrollView):
+	def __init__ (self, **keywordargs):
+		super(ScrollView, self).__init__(self, **keywordargs)
+		self.layout = GridLayout(cols = 1, spacing = 10, size_hint_y = .5)
+		self.layout.add_widget(Button(text = "click me!"))
+		self.layout.add_widget(Button(text = "click me!"))
+		self.layout.add_widget(Button(text = "click me!"))
+		self.layout.add_widget(Button(text = "click me!"))
+		self.layout.add_widget(Button(text = "click me!"))
+		self.layout.add_widget(Button(text = "click me!"))
+		self.layout.add_widget(Button(text = "click me!"))
+		self.layout.add_widget(Button(text = "click me!"))
+		self.layout.add_widget(Button(text = "click me!"))
+		self.layout.add_widget(Button(text = "click me!"))
+		self.layout.add_widget(Button(text = "click me!"))
+		self.add_widget(self.layout)
 
 class FFTApp(App):
 	def build(self):
@@ -35,3 +51,4 @@ class FFTApp(App):
 
 if __name__ == '__main__':
 	FFTApp().run()
+
