@@ -29,13 +29,19 @@
 
 		BoxLayout:
 			AnchorLayout:
+				size_hint: None, None
+				size: root.width, 40
 				anchor_x: 'left'
 				Button:
+					size_hint: None, None
+					size: root.width, 40
 					text: "button"
 					on_press: app.change()
 			AnchorLayout:
 				anchor_x: 'right'
 				Button:
+					size_hint: None, None
+					size: root.width, 40
 					text: "button"
 					on_press: app.change()
 
