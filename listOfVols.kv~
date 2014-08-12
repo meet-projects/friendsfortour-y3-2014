@@ -3,67 +3,153 @@
 
 <FFTmain>:
 	canvas:
-		Color:
-			rgba: 255,255,255,255
 		Rectangle:
-			size: root.width, root.height
+			source: 'map.jpg'
+			size: self.size
+			pos: 0,0
 
 	BoxLayout:
+		
 		id: findvol_layout
 		pos: 40, 20
 		size: root.width - 80, root.height - 40
-		spaceing:1
+		spacing:1
 		orientation:'vertical'
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: 1, 0.1
-				text: "Zidan awat"
+				size_hint: None, None
+				size:157,35
+				text: "Zidan awad"
+				background_normal:'button.png'
 			Label:
 				id: vol_rating
-				color: 0, 0, 0, 1
+				color: 0,0,0, 1
 				size_hint: .5, 0.1
 				text: "9.9"
 			Button:
-				size_hint: 1, 0.1
+				size_hint: None, None
+				size:157,35
+				background_normal:'button.png'
 				text: "Choose me!!!"
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: 1, 0.1
+				size_hint: None, None
+				size:157,35
 				text: "Aseel Kassab"
+				background_normal:'button.png'
 			Label:
 				id: vol_rating
 				color: 0, 0, 0, 1
 				size_hint: .5, 0.1
-				text: "8.0"
+				text: "9.5"
 			Button:
-				size_hint: 1, 0.1
+				size_hint: None, None
+				size:157,35
+				background_normal:'button.png'
 				text: "Choose me!!!"
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: 1, 0.1
+				size_hint: None, None
+				size:157,35
+				background_normal:'button.png'
 				text: "Noy Galron"
 			Label:
 				id: vol_rating
 				color: 0, 0, 0, 1
 				size_hint: .5, 0.1
-				text: "7.0"
+				text: "9.3"
 			Button:
-				size_hint: 1, 0.1
+				size_hint: None, None
+				size:157,35
+				background_normal:'button.png'
 				text: "Choose me!!!"
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: 1, 0.1
+				size_hint: None, None
+				size:157,35
+				background_normal:'button.png'
 				text: "Ido Silverwater"
 			Label:
 				id: vol_rating
 				color: 0, 0, 0, 1
 				size_hint: .5, 0.1
-				text: "6.9"
+				text: "8.9"
 			Button:
-				size_hint: 1, 0.1
+				size_hint: None, None
+				size:157,35
+				background_normal:'button.png'
+				text: "Choose me!!!"
+		
+		BoxLayout:
+			orientation: 'horizontal'
+			Button:
+				size_hint: None, None
+				size:157,35
+				background_normal:'button.png'
+				text: "Moran Zaks"
+			Label:
+				id: vol_rating
+				color: 0, 0, 0, 1
+				size_hint: .5, 0.1
+				text: "8.7"
+			Button:
+				size_hint: None, None
+				size:157,35
+				background_normal:'button.png'
+				text: "Choose me!!!"
+		BoxLayout:
+			orientation: 'horizontal'
+			Button:
+				size_hint: None, None
+				size:157,35
+				background_normal:'button.png'
+				text: "Aviv Kaplan"
+			Label:
+				id: vol_rating
+				color: 0, 0, 0, 1
+				size_hint: .5, 0.1
+				text: "8.5"
+			Button:
+				size_hint: None, None
+				size:157,35
+				background_normal:'button.png'
+				text: "Choose me!!!"
+		BoxLayout:
+			orientation: 'horizontal'
+			Button:
+				size_hint: None, None
+				size:157,35
+				background_normal:'button.png'
+				text: "Rasan Shalabi"
+			Label:
+				id: vol_rating
+				color: 0, 0, 0, 1
+				size_hint: .5, 0.1
+				text: "8.5"
+			Button:
+				size_hint: None, None
+				size:157,35
+				background_normal:'button.png'
+				text: "Choose me!!!"
+		BoxLayout:
+			orientation: 'horizontal'
+			Button:
+				size_hint: None, None
+				size:157,35
+				background_normal:'button.png'
+				text: "Saja Hriesh"
+			Label:
+				id: vol_rating
+				color: 0, 0, 0, 1
+				size_hint: .5, 0.1
+				text: "8.5"
+			Button:
+				size_hint: None, None
+				size:157,35
+				background_normal:'button.png'
 				text: "Choose me!!!"
 
