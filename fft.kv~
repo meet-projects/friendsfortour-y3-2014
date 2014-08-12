@@ -10,7 +10,7 @@
 	
 	canvas:
 		Color:
-			rgba: 255,255,255,255
+			rgba: 255,255,255,1
 		Rectangle:
 			size: root.width, root.height
 	BoxLayout:
@@ -29,23 +29,75 @@
 				size: 150, 95 
 				on_press: app.change()
 		ScrollView:
-			Label:
-				text_size: self.width, None
+			GridLayout:
+				cols: 1
+				orientation: 'vertical'
+				spacing: 75
 				size_hint_y: None
-				color: 0,0,0,1
-				text: """Ido posted a picture with Aseel .k.: we had a lot of fun today! Aviv shared his location at Misgav with Moran. Zidane posted a picture with Noy.Aseel .a. shared her location at Nazareth with Saja"""		
-				height: self.texture_size[1]
+				BoxLayout:
+					color: 0,0,0,1
+					padding: [25, 0]
+					size_hint_y: None
+					AnchorLayout:
+						anchor_x: 'left'
+						Image:
+							source: 'images/Ido&Aseel.JPG'
+					AnchorLayout:
+						anchor_x: 'right'
+						Label:
+							color: 0,0,0,1
+							text:" --> Ido posted a picture with Aseel .k. \n we had a lot of fun today!"
+				BoxLayout:
+					size_hint_y: None
+					Label:
+						color: 0,0,0,1
+						text:" --> Razan and Moran are going on an adventure tour in Akko at 16.8.2014"
+				BoxLayout:
+					size_hint_y: None
+					Label:
+						color: 0,0,0,1
+						text:" --> Aseel .A. shared her location at Nazareth with Saja"
+				BoxLayout:
+					size_hint_y: None
+					color: 0,0,0,1
+					padding: [25, 0]
+					AnchorLayout:
+						anchor_x: 'left'
+						Image:
+							source: 'images/Zidane&Noy.JPG'
+					AnchorLayout:
+						anchor_x: 'right'
+						Label:
+							color: 0,0,0,1
+							text:" --> Zidane posted a picture with Noy"
+				BoxLayout:
+					size_hint_y: None
+					Label:
+						color: 0,0,0,1
+						text:"Aviv shared his location at Misgav with Moran"
 
+
+
+#			Label:
+#				text_size: self.width, None
+#				size_hint_y: None
+#				color: 0,0,0,1
+#				text: """ --> Ido posted a picture with Aseel .k.: we had a lot of fun today! \n --> Aviv shared his location at Misgav with Moran. \n --> Zidane posted a picture with Noy. \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja"""		
+#				height: self.texture_size[1]
+
+	
 		BoxLayout:
-			size_hint: .2, None
+			size_hint: 1, .2
 			AnchorLayout:
 				anchor_x: 'left'
 				Button:
+					size: root.width/2, 40
 					text: "button"
 					on_press: app.change()
 			AnchorLayout:
 				anchor_x: 'right'
 				Button:
+					size: root.width/2, 40
 					text: "button"
 					on_press: app.change()
 
