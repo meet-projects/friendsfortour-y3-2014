@@ -540,6 +540,8 @@
 			color: 0, 0, 0, 1
 			#size_hint: .5, 0.1
 			text: "Noy Galron"
+			font_size: 20
+			font_name:'./font2.ttf'
 		Label:
 			id: vol_rating
 			color: 0, 0, 0, 1
@@ -576,4 +578,10 @@
 			id: vol_rating
 			color: 0, 0, 0, 1
 			#size_hint: .5, 0.1
-			text: "Languages: Hebrew, English"
+			text: "Languages: \nHebrew, English"
+		Button:				
+			size_hint: None, None
+			size:157,35
+			background_normal:'images/button2.png'
+			text: "Find a volunteer!!!"
+			on_press: app.change()
