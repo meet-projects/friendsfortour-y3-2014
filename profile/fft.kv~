@@ -1,0 +1,74 @@
+#:kivy 1.0.8 
+   
+
+<FFTmain>:
+	canvas:
+		Color: 
+			rgba: 0.902,0.902,0.98,1
+		Rectangle:
+			size: root.width, root.height
+
+	BoxLayout:
+		id: findvol_layout
+		pos: 40, 300
+		size: root.width - 80, root.height - 450
+		spaceing:0.3
+		orientation:'vertical'
+		BoxLayout:
+			orientation: 'horizontal'
+			Image:
+				source: "noy.jpg"
+				size_hint: .5, 4
+			Label:
+				id: vol_rating
+				color: 0, 0, 0, 1
+				size_hint: .5, 0.1
+				text: "Noy Galron"
+		BoxLayout:
+			orientation: 'horizontal'
+			Label:
+				id: vol_rating
+				color: 0, 0, 0, 1
+				size_hint: .5, 0.1
+				text: "noygalron@gmail.com"
+			Button:
+				size_hint: None, None
+				size:157,35
+				background_normal:'button2.png'
+				text: "PICK ME UP!!!"
+		BoxLayout:
+			orientation: 'horizontal'
+			Label:
+				id: vol_rating
+				color: 0, 0, 0, 1
+				size_hint: 0.4, 0.1
+				text: "Gender: Female"
+			Button:
+				size_hint: None, None
+				size:157,35
+				background_normal:'button2.png'
+				text: "City: Nazareth Illit"
+		BoxLayout:
+			orientation: 'horizontal'
+			Label:
+				id: vol_rating
+				color: 0, 0, 0, 1
+				size_hint: .5, 0.1
+				text: "Age: 17"
+			Button:
+				size_hint: None, None
+				size:157,35
+				background_normal:'button2.png'
+				background_down:'stars.jpg'
+				text: "Rate Me"
+		BoxLayout:
+			orientation: 'horizontal'
+			Label:
+				id: vol_rating
+				color: 0, 0, 0, 1
+				size_hint: .5, 0.1
+				text: "Languages: Hebrew, English"
+		
+
+
+			
