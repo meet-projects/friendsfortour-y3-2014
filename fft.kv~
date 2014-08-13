@@ -372,7 +372,7 @@
 		id: findvol_layout
 		pos: 40, 20
 		size: root.width - 80, root.height - 40
-		size_hint: .9, none
+		size_hint: .9, None
 		spaceing:1
 		orientation:'vertical'
 		BoxLayout:
@@ -426,6 +426,7 @@
 				size:157,35
 				text: "Pick Me"
 				background_normal:'button2.png'
+				on_press: app.change5()
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:

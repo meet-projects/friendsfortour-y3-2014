@@ -1,5 +1,6 @@
 import kivy
-kivy.require('1.8.0') #our version..
+
+#kivy.require('1.8.0') #our version..
 
 from kivy.app import App
 from kivy.uix.screenmanager import ScreenManager, Screen
@@ -14,7 +15,7 @@ from kivy.clock import Clock
 from kivy.uix.widget import Widget
 from kivy.properties import NumericProperty, ReferenceListProperty, ObjectProperty
 
-
+__version__ = '1.8.0'
 
 i = 0
 sm = ScreenManager()
