@@ -8,7 +8,11 @@
 		orientation: 'vertical'
 		GridLayout:
 			size_hint: 1, 1
+<<<<<<< HEAD
 			padding:50
+=======
+			padding:150
+>>>>>>> 7af0c5ef0653fcce5f27eccad809153ddcd9fb4f
 			cols: 2
 			AnchorLayout:
 				size_hint: 1, 0.47

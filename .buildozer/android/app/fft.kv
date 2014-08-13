@@ -8,7 +8,7 @@
 		orientation: 'vertical'
 		GridLayout:
 			size_hint: 1, 1
-			padding:320
+			padding:160
 			cols: 2
 			AnchorLayout:
 				size_hint: 1, 0.47
@@ -387,7 +387,7 @@
 	ScrollView:
 		id: scrollView
 		size_hint: None, None
-		size: root.width/1.5, root.height
+		size: root.width, root.height
 		GridLayout:
 			cols: 1
 			id: findvol_layout
@@ -395,7 +395,6 @@
 			size: self.parent.width*3, self.parent.height*3
 			#size_hint: .9, None
 			size_hint_y: None
-			spaceing:10
 			#orientation:'vertical'
 			minimum_height: self.height
 			BoxLayout:
