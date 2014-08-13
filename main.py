@@ -74,6 +74,7 @@ class FFTApp(App):
 		self.chat = Chat(name = 'chat')
 		sm.add_widget(self.chat)
 
+		
 		#container = BoxLayout(orientation = 'vertical')
 
 		#topBar = AnchorLayout(size_hint = (1, None), anchor_x = 'center', anchor_y = 'top')

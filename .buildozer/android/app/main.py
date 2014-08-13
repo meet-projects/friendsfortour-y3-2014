@@ -38,7 +38,7 @@ class Chat(Screen):
 			i +=1 
 			self.ids.l10.text = self.ids.l12.text
 			self.ids.l12.text = ''
-			self.ids.l11.text = "                                      Thank You! I can't wait to meet you to!"
+			self.ids.l11.text = "                                      Thank You! I can't wait to meet you too!"
 		elif i==1:
 			self.ids.l6.text = self.ids.l8.text
 			self.ids.l8.text = self.ids.l10.text
@@ -74,6 +74,7 @@ class FFTApp(App):
 		self.chat = Chat(name = 'chat')
 		sm.add_widget(self.chat)
 
+		
 		#container = BoxLayout(orientation = 'vertical')
 
 		#topBar = AnchorLayout(size_hint = (1, None), anchor_x = 'center', anchor_y = 'top')
