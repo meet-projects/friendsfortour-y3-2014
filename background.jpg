@@ -1,0 +1,601 @@
+#:kivy 1.8.0
+
+#still missing the profile. 
+
+<Chat>:
+	BoxLayout:
+		id: upperBox
+		orientation: 'vertical'
+		GridLayout:
+			size_hint: 1, 1
+			padding:30
+			cols: 2
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l7
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l8
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l9
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l10
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l11
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+
+				Label:
+					size_hint: None, None
+					id:l12
+					text: ''			
+		BoxLayout:
+			size_hint: 1, 0.05
+			orientation: 'horizontal'
+			TextInput:
+				id: messageText
+				size_hint: 0.65, None
+				height: 80
+			Button:
+				text: "send"
+				size_hint: 0.35, None
+				height: messageText.height
+				on_press: root.g()
+
+#<NewsFeed>:
+#	background_color: 1,1,1,1
+#	BoxLayout:
+#		orientation: 'vertical'
+#		Button:
+#			text: "button"
+#			on_press: app.change()
+#	
+#	canvas:
+#		Color:
+#			rgba: 255,255,255,1
+#		Rectangle:
+#			size: root.width, root.height
+#	BoxLayout:
+#		orientation: 'vertical'
+#		AnchorLayout:
+#			size_hint: 1, None
+#			anchor_x: 'center'
+#			anchor_y: 'top'
+#			Image:
+#				source: 'images/logo.png'
+#				on_touch: app.change()
+#			Button:
+#				background_down: 'images/logo.png'
+#				background_normal: 'images/logo.png'
+#				size_hint: None, None
+#				size: 150, 95 
+#				on_press: app.change()
+#	
+#		ScrollView:
+#			id: moshe
+#
+#		ScrollView:
+#			size_hint: None, None
+#			size: 400, 400
+#			GridLayout:
+#				cols: 1
+#				rows: 8
+#				spacing: 10
+#				size_hint_y: None
+#				Button: 
+#					height: 40
+#					size_hint_y: None
+#				Button: 
+#					height: 40
+#					size_hint_y: None
+#				Button: 
+#					height: 40
+#					size_hint_y: None
+#				Button: 
+#					height: 40
+#					size_hint_y: None
+#				Button: 
+#					height: 40
+#					size_hint_y: None
+#				Button: 
+#					height: 40
+#					size_hint_y: None
+#				Button: 
+#					height: 40
+#					size_hint_y: None
+#				Button: 
+#					height: 40
+#					size_hint_y: None
+#				orientation: 'vertical'
+#				spacing: 75
+#				size_hint_y: None
+#				BoxLayout:
+#					color: 0,0,0,1
+#					padding: [25, 0]
+#					AnchorLayout:
+#						anchor_x: 'left'
+#						Image:
+#							source: 'images/Ido&Aseel.JPG'
+#					AnchorLayout:
+#						anchor_x: 'right'
+#						Label:
+#							color: 0,0,0,1
+#							text:" --> Ido posted a picture with Aseel .k. \n we had a lot of fun today!"
+#				BoxLayout:
+#					Label:
+#						color: 0,0,0,1
+#						text:" --> Razan and Moran are going on an adventure tour in Akko at 16.8.2014"
+#				BoxLayout:
+#					Label:
+#						color: 0,0,0,1
+#						text:" --> Aseel .A. shared her location at Nazareth with Saja"
+#				BoxLayout:
+#					color: 0,0,0,1
+#					padding: [25, 0]
+#					AnchorLayout:
+#						anchor_x: 'left'
+#						Image:
+#							source: 'images/Zidane&Noy.JPG'
+#					AnchorLayout:
+#						anchor_x: 'right'
+#						Label:
+#							color: 0,0,0,1
+#							text:" --> Zidane posted a picture with Noy"
+#				BoxLayout:
+#					Label:
+#						color: 0,0,0,1
+#						text:"Aviv shared his location at Misgav with Moran"
+#
+#
+#
+#			Label:
+#				text_size: self.width, None
+#				size_hint_y: None
+#				color: 0,0,0,1
+#				text: """ --> Ido posted a picture with Aseel .k.: we had a lot of fun today! \n --> Aviv shared his location at Misgav with Moran. \n --> Zidane posted a picture with Noy. \n --> Aseel .a. shared her location at Nazareth with Saja""" * 50		
+#				height: self.texture_size[1]
+#
+#	
+#		BoxLayout:
+#			size_hint: 1, .2
+#			AnchorLayout:
+#				anchor_x: 'left'
+#				Button:
+#					size: root.width/2, 40
+#					text: "button"
+#					on_press: app.change()
+#			AnchorLayout:
+#				anchor_x: 'right'
+#				Button:
+#					size: root.width/2, 40
+#					text: "bchat"
+#					on_press: app.change3()
+#
+
+<FindVol>
+#	BoxLayout:
+#		orientation: 'vertical'
+#		Button:
+#			text: "button2"
+#			on_press: app.change2()
+	Image:
+		source: 'images/background.jpg'
+		size_hint_y: None
+		height: dp(700)
+	AnchorLayout:
+		anchor_x: 'center'
+		anchor_y: 'center'
+		RelativeLayout:
+			#canvas:
+			#	Color:
+			#		rgba: 255,255,255,255
+			#	Rectangle:
+			#		size: root.width, root.height
+			#cols: 1
+			#pos_x:  root.width/2 - self.width/2
+			id: findvol_layout
+			#size: 10, 10 
+			spacing: 30
+			#orientation:'vertical'
+			TextInput:
+				size_hint: .9, None
+				pos: root.width/2 - self.width/2, 3*root.height/4
+				padding_x: 20
+				id: date_ti
+				text: "<Date>  "
+			TextInput:
+				size_hint: .9, None
+				pos: root.width/2 - self.width/2, root.height/2
+				padding_x: 20
+				id: city_ti
+				text: "<City>  "
+			Button:
+				size_hint: .6, None
+				pos: root.width/2 - self.width/2, root.height/4
+				padding_x: 20
+				text: "GO"
+				#on_press: root.displayTopRatedVols()
+				on_press: app.change4()
+
+<ListVol>
+	canvas:
+		Rectangle:
+			source: 'map.jpg'
+			size: self.size
+			pos: 0,0
+
+	BoxLayout:
+		id: findvol_layout
+		pos: 40, 20
+		size: root.width - 80, root.height - 40
+		size_hint: .9, None
+		spaceing:1
+		orientation:'vertical'
+		BoxLayout:
+			orientation: 'horizontal'
+			Button:
+				size_hint: .3,None
+				size:157,35
+				text: "Zidan Awad"
+				font_name:'./font2.ttf'
+				background_normal:'button2.png'
+			Label:
+				id: vol_rating
+				color: 1, 1, 1, 1
+				size_hint: .5, 0.1
+				text: " Rating: 9.9"
+				font_name:'./font2.ttf'
+			Button:
+				size_hint: .3,None
+				size:157,35
+				text: "Pick Me"
+				font_name:'./font2.ttf'
+				background_normal:'button2.png'
+		BoxLayout:
+			orientation: 'horizontal'
+			Button:
+				size_hint: .3,None
+				size:157,35
+				text: "Aseel Kassab"
+				font_name:'./font2.ttf'
+				background_normal:'button2.png'
+			Label:
+
+				id: vol_rating
+				color: 1,1,1,1
+				size_hint: .5, 0.1
+				text: "Rating: 9.5"
+				font_name:'./font2.ttf'
+			Button:
+				size_hint: .3,None
+				size:157,35
+				text: "Pick Me"
+				font_name:'./font2.ttf'
+				background_normal:'button2.png'
+		BoxLayout:
+			orientation: 'horizontal'
+			Button:
+				size_hint: .3,None
+				size:157,35
+				text: "Noy Galron"
+				font_name:'./font2.ttf'
+				background_normal:'button2.png'
+				on_press: app.change5()
+			Label:
+				id: vol_rating
+				color: 1,1,1,1
+				size_hint: .5, 0.1
+				text: "Rating: 9.3"
+				font_name:'./font2.ttf'
+			Button:
+				size_hint: .3,None
+				size:157,35
+				text: "Pick Me"
+				font_name:'./font2.ttf'
+				background_normal:'button2.png'
+		BoxLayout:
+			orientation: 'horizontal'
+			Button:
+				size_hint: .3,None
+				size:160,35
+				text: "Ido Silverwater"
+				font_name:'./font2.ttf'
+				background_normal:'button2.png'
+			Label:
+				id: vol_rating
+				color: 1,1,1,1
+				size_hint: .5, 0.1
+				text: "Rating: 8.0"
+				font_name:'./font2.ttf'
+			Button:
+				size_hint: .3,None
+				size:157,35
+				text: "Pick Me"
+				font_name:'./font2.ttf'
+				background_normal:'button2.png'
+		BoxLayout:
+			orientation: 'horizontal'
+			Button:
+				size_hint: .3,None
+				size:157,35
+				text: "Moran Zaks"
+				font_name:'./font2.ttf'
+				background_normal:'button2.png'
+			Label:
+				id: vol_rating
+				color: 1,1,1,1
+				size_hint: .5, 0.1
+				text: "Rating: 7.3"
+				font_name:'./font2.ttf'
+			Button:
+				size_hint: .3,None
+				size:157,35
+				text: "Pick Me"
+				font_name:'./font2.ttf'
+				background_normal:'button2.png'
+		BoxLayout:
+			orientation: 'horizontal'
+			Button:
+				size_hint: .3,None
+				size:157,35
+				text: "Aviv Kaplan"
+				font_name:'./font2.ttf'
+				background_normal:'button2.png'
+			Label:
+				id: vol_rating
+				color: 1,1,1,1
+				size_hint: .5, 0.1
+				text: "Rating: 7.1"
+				font_name:'./font2.ttf'
+			Button:
+				size_hint: .3,None
+				size:157,35
+				text: "Pick Me"
+				font_name:'./font2.ttf'
+				background_normal:'button2.png'
+		BoxLayout:
+			orientation: 'horizontal'
+			Button:
+				size_hint: .3,None
+				size:157,35
+				text: "Saja Hriesh"
+				font_name:'./font2.ttf'
+				background_normal:'button2.png'
+			Label:
+				id: vol_rating
+				color: 1,1,1,1
+				size_hint: .5, 0.1
+				text: "Rating: 6.9"
+				font_name:'./font2.ttf'
+			Button:
+				size_hint: .3,None
+				size:157,35
+				text: "Pick Me"
+				font_name:'./font2.ttf'
+				background_normal:'button2.png'
+<Profile>
+	canvas:
+		Color: 
+			rgba: 0.902,0.902,0.98,1
+		Rectangle:
+			size: root.width, root.height
+
+	GridLayout:
+		id: findvol_layout
+		cols: 2
+		#pos: 0, 0
+		#size: root.width - 80, root.height - 450
+		#spacing: 0.3
+		orientation:'vertical'
+		Image:
+			pos: 100, 100
+			source: "images/noy.jpg"
+			#size_hint: .5, 4
+		Label:
+			id: vol_rating
+			color: 0, 0, 0, 1
+			#size_hint: .5, 0.1
+			text: "Noy Galron"
+			font_size: 30
+			font_name:'./font2.ttf'
+		Label:
+			id: vol_rating
+			color: 0, 0, 0, 1
+			#size_hint: .5, 0.1
+			text: "noygalron@gmail.com"
+		Button:
+			#size_hint: None, None
+			#size:157,35
+			background_normal:'images/button2.png'
+			text: "PICK ME UP!!!"
+			on_press: app.change3()
+		Label:
+			id: vol_rating
+			color: 0, 0, 0, 1
+			#size_hint: 0.4, 0.1
+			text: "Gender: Female"
+		Button:
+			#size_hint: None, None
+			#size:157,35
+			background_normal:'images/button2.png'
+			text: "City: Nazareth Illit"
+		Label:
+			id: vol_rating
+			color: 0, 0, 0, 1
+			size_hint: .5, 0.1
+			text: "Age: 17"
+		Button:
+			#size_hint: None, None
+			#size:157,35
+			background_normal:'images/button2.png'
+			background_down:'images/stars.jpg'
+			text: "Rate Me"
+		Label:
+			id: vol_rating
+			color: 0, 0, 0, 1
+			#size_hint: .5, 0.1
+			text: "Languages: \nHebrew, English"
+		Button:				
+			size_hint: None, None
+			size:157,35
+			background_normal:'images/button2.png'
+			text: "Find a volunteer!!!"
+			on_press: app.change()
