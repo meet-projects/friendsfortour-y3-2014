@@ -8,7 +8,7 @@
 		orientation: 'vertical'
 		GridLayout:
 			size_hint: 1, 1
-			padding:90
+			padding:180
 			cols: 2
 			AnchorLayout:
 				size_hint: 1, 0.47
@@ -373,6 +373,8 @@
 				pos: root.width/2 - self.width/2, root.height/4
 				padding_x: 20
 				text: "GO"
+				font_name: './font2.ttf'
+				background_normal: 'button2.png'
 				#on_press: root.displayTopRatedVols()
 				on_press: app.change4()
 
@@ -595,8 +597,8 @@
 			#size_hint: .5, 0.1
 			text: "Languages: \nHebrew, English"
 		Button:				
-			size_hint: None, None
-			size:157,35
+			#size_hint: None, None
+			#size:157,35
 			background_normal:'images/button2.png'
 			text: "Find a volunteer!!!"
 			on_press: app.change()
