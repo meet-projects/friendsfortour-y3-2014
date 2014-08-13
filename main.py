@@ -11,6 +11,10 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.scrollview import ScrollView
 from kivy.uix.anchorlayout import AnchorLayout
 from kivy.clock import Clock
+from kivy.uix.widget import Widget
+from kivy.properties import NumericProperty, ReferenceListProperty, ObjectProperty
+
+
 
 i = 0
 sm = ScreenManager()
@@ -63,16 +67,16 @@ class FFTApp(App):
 		self.chat = Chat(name = 'chat')
 		sm.add_widget(self.chat)
 
-		container = BoxLayout(orientation = 'vertical')
+		#container = BoxLayout(orientation = 'vertical')
 
-		topBar = AnchorLayout(size_hint = (1, None), anchor_x = 'center', anchor_y = 'top')
+		#topBar = AnchorLayout(size_hint = (1, None), anchor_x = 'center', anchor_y = 'top')
 
-		layout = GridLayout(cols=1, spacing=10, size_hint_y=None)
-		layout.bind(minimum_height=layout.setter('height'))
-		for i in range(5):
-			examp = BoxLayout(size_hint_x=1, size_hint_y=None, height=100)
-			examp.add_widget(Label(text="moshe"+str(i)))
-			layout.add_widget(examp)
+		#layout = GridLayout(cols=1, spacing=10, size_hint_y=None)
+		#layout.bind(minimum_height=layout.setter('height'))
+		#for i in range(5):
+		#	examp = BoxLayout(size_hint_x=1, size_hint_y=None, height=100)
+		#	examp.add_widget(Label(text="moshe"+str(i)))
+		#	layout.add_widget(examp)
 		#self.news.ids.moshe.add_widget(layout)
 		#scroll = ScrollView(size_hint=(None,None), size=(400,400))
 		#scroll.add_widget(layout)

@@ -6,72 +6,70 @@
 	BoxLayout:
 		id: upperBox
 		orientation: 'vertical'
-		GridLayout:
-			cols: 2
-			AnchorLayout:
-				size_hint: 1, 0.47
-				id: messageBox
-				anchor_x: 'left'
-				Label:
-					size_hint: None, None
-					id:l0
-					text: ''
-			AnchorLayout:
-				size_hint: 1, 0.47
-				id: messageBox1
-				anchor_x: 'right'
-				Label:
-					size_hint: None, None
-					id:l6
-					text: ''
-			AnchorLayout:
-				size_hint: 1, 0.47
-				id: messageBox
-				anchor_x: 'left'
-				Label:
-					size_hint: None, None
-					id:l7
-					text: ''
-			AnchorLayout:
-				size_hint: 1, 0.47
-				id: messageBox1
-				anchor_x: 'right'
-				Label:
-					size_hint: None, None
-					id:l8
-					text: ''
-			AnchorLayout:
-				size_hint: 1, 0.47
-				id: messageBox
-				anchor_x: 'left'
-				Label:
-					size_hint: None, None
-					id:l9
-					text: ''
-			AnchorLayout:
-				size_hint: 1, 0.47
-				id: messageBox1
-				anchor_x: 'right'
-				Label:
-					size_hint: None, None
-					id:l10
-					text: ''
-			AnchorLayout:
-				size_hint: 1, 0.47
-				id: messageBox1
-				anchor_x: 'right'
-				Label:
-					size_hint: None, None
-					id:l11
-					text: ''
-			AnchorLayout:
-				size_hint: 1, 0.47
-				id: messageBox
-				anchor_x: 'left'
-				Label:
-					size_hint: None, None
-					id:l12
-					text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox
+			anchor_x: 'left'
+			Label:
+				size_hint: None, None
+				id:l0
+				text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox1
+			anchor_x: 'right'
+			Label:
+				size_hint: None, None
+				id:l1
+				text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox
+			anchor_x: 'left'
+			Label:
+				size_hint: None, None
+				id:l0
+				text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox1
+			anchor_x: 'right'
+			Label:
+				size_hint: None, None
+				id:l1
+				text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox
+			anchor_x: 'left'
+			Label:
+				size_hint: None, None
+				id:l0
+				text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox1
+			anchor_x: 'right'
+			Label:
+				size_hint: None, None
+				id:l1
+				text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox1
+			anchor_x: 'right'
+			Label:
+				size_hint: None, None
+				id:l11
+				text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox
+			anchor_x: 'left'
+			Label:
+				size_hint: None, None
+				id:l12
+				text: ''
 		BoxLayout:
 			size_hint: 1, 0.05
 			orientation: 'horizontal'
@@ -426,14 +424,13 @@
 
 	BoxLayout:
 		id: findvol_layout
-		#pos: 0, 0
-		#size: root.width - 80, root.height - 450
-		#spacing: 0.3
+		pos: 40, 300
+		size: root.width - 80, root.height - 450
+		spaceing:0.3
 		orientation:'vertical'
 		BoxLayout:
 			orientation: 'horizontal'
 			Image:
-				pos: 100, 100
 				source: "images/noy.jpg"
 				size_hint: .5, 4
 			Label:
