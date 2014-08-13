@@ -6,70 +6,185 @@
 	BoxLayout:
 		id: upperBox
 		orientation: 'vertical'
-		AnchorLayout:
-			size_hint: 1, 0.47
-			id: messageBox
-			anchor_x: 'left'
-			Label:
-				size_hint: None, None
-				id:l0
-				text: ''
-		AnchorLayout:
-			size_hint: 1, 0.47
-			id: messageBox1
-			anchor_x: 'right'
-			Label:
-				size_hint: None, None
-				id:l1
-				text: ''
-		AnchorLayout:
-			size_hint: 1, 0.47
-			id: messageBox
-			anchor_x: 'left'
-			Label:
-				size_hint: None, None
-				id:l0
-				text: ''
-		AnchorLayout:
-			size_hint: 1, 0.47
-			id: messageBox1
-			anchor_x: 'right'
-			Label:
-				size_hint: None, None
-				id:l1
-				text: ''
-		AnchorLayout:
-			size_hint: 1, 0.47
-			id: messageBox
-			anchor_x: 'left'
-			Label:
-				size_hint: None, None
-				id:l0
-				text: ''
-		AnchorLayout:
-			size_hint: 1, 0.47
-			id: messageBox1
-			anchor_x: 'right'
-			Label:
-				size_hint: None, None
-				id:l1
-				text: ''
-		AnchorLayout:
-			size_hint: 1, 0.47
-			id: messageBox1
-			anchor_x: 'right'
-			Label:
-				size_hint: None, None
-				id:l11
-				text: ''
-		AnchorLayout:
-			size_hint: 1, 0.47
-			id: messageBox
-			anchor_x: 'left'
-			Label:
-				size_hint: None, None
-				id:l12
-				text: ''
+		GridLayout:
+			size_hint: 1, 1
+			cols: 2
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l5
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l6
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l7
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l8
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l9
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l10
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'left'
+				Label:
+					size_hint: None, None
+					id:l11
+					text: ''
+			AnchorLayout:
+				size_hint: 1, 0.47
+				id: messageBox
+				anchor_x: 'right'
+				Label:
+					size_hint: None, None
+					id:l12
+					text: ''			
 		BoxLayout:
 			size_hint: 1, 0.05
 			orientation: 'horizontal'
@@ -249,7 +364,7 @@
 <ListVol>
 	canvas:
 		Rectangle:
-			source: 'images/map.jpg'
+			source: 'map.jpg'
 			size: self.size
 			pos: 0,0
 
@@ -257,29 +372,30 @@
 		id: findvol_layout
 		pos: 40, 20
 		size: root.width - 80, root.height - 40
-		spacing:1
+		size_hint: .9, none
+		spaceing:1
 		orientation:'vertical'
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: None, None
+				size_hint: None,None
 				size:157,35
-				text: "Zidane Awad"
+				text: "Zidan Awad"
 				background_normal:'button2.png'
 			Label:
 				id: vol_rating
-				color: 0,0,0, 1
+				color: 0, 0, 0, 1
 				size_hint: .5, 0.1
 				text: "9.9"
 			Button:
-				size_hint: None, None
+				size_hint: None,None
 				size:157,35
-				background_normal:'button.png'
-				text: "Choose!"
+				text: "Pick Me"
+				background_normal:'button2.png'
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: None, None
+				size_hint: None,None
 				size:157,35
 				text: "Aseel Kassab"
 				background_normal:'button2.png'
@@ -289,132 +405,95 @@
 				size_hint: .5, 0.1
 				text: "9.5"
 			Button:
-				size_hint: None, None
+				size_hint: None,None
 				size:157,35
-				background_normal:'button.png'
-				text: "Choose!"
+				text: "Pick Me"
+				background_normal:'button2.png'
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: None, None
+				size_hint: None,None
 				size:157,35
-				background_normal:'button2.png'
 				text: "Noy Galron"
-				on_press: app.change5()
+				background_normal:'button2.png'
 			Label:
 				id: vol_rating
 				color: 0, 0, 0, 1
 				size_hint: .5, 0.1
 				text: "9.3"
 			Button:
-				size_hint: None, None
+				size_hint: None,None
 				size:157,35
-				background_normal:'button.png'
-				text: "Choose!"
+				text: "Pick Me"
+				background_normal:'button2.png'
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: None, None
+				size_hint: None,None
 				size:157,35
-				background_normal:'button2.png'
 				text: "Ido Silverwater"
+				background_normal:'button2.png'
 			Label:
 				id: vol_rating
 				color: 0, 0, 0, 1
 				size_hint: .5, 0.1
-				text: "8.9"
+				text: "8.0"
 			Button:
-				size_hint: None, None
+				size_hint: None,None
 				size:157,35
-				background_normal:'button.png'
-				text: "Choose!"
-		
+				text: "Pick Me"
+				background_normal:'button2.png'
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: None, None
+				size_hint: None,None
 				size:157,35
-				background_normal:'button2.png'
 				text: "Moran Zaks"
+				background_normal:'button2.png'
 			Label:
 				id: vol_rating
 				color: 0, 0, 0, 1
 				size_hint: .5, 0.1
-				text: "8.7"
+				text: "7.3"
 			Button:
-				size_hint: None, None
+				size_hint: None,None
 				size:157,35
-				background_normal:'button.png'
-				text: "Choose!"
+				text: "Pick Me"
+				background_normal:'button2.png'
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: None, None
+				size_hint: None,None
 				size:157,35
-				background_normal:'button2.png'
 				text: "Aviv Kaplan"
+				background_normal:'button2.png'
 			Label:
 				id: vol_rating
 				color: 0, 0, 0, 1
 				size_hint: .5, 0.1
-				text: "8.5"
+				text: "7.1"
 			Button:
-				size_hint: None, None
+				size_hint: None,None
 				size:157,35
-				background_normal:'button.png'
-				text: "Choose!"
+				text: "Pick Me"
+				background_normal:'button2.png'
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: None, None
+				size_hint: None,None
 				size:157,35
-				background_normal:'button2.png'
-				text: "Rasan Shalabi"
-			Label:
-				id: vol_rating
-				color: 0, 0, 0, 1
-				size_hint: .5, 0.1
-				text: "8.5"
-			Button:
-				size_hint: None, None
-				size:157,35
-				background_normal:'button.png'
-				text: "Choose!"
-		BoxLayout:
-			orientation: 'horizontal'
-			Button:
-				size_hint: None, None
-				size:157,35
-				background_normal:'button2.png'
 				text: "Saja Hriesh"
-			Label:
-				id: vol_rating
-				color: 0, 0, 0, 1
-				size_hint: .5, 0.1
-				text: "8.5"
-			Button:
-				size_hint: None, None
-				size:157,35
-				background_normal:'button.png'
-				text: "Choose!"
-		BoxLayout:
-			orientation: 'horizontal'
-			Button:
-				size_hint: None, None
-				size:157,35
 				background_normal:'button2.png'
-				text: "Aseel Ar"
 			Label:
 				id: vol_rating
 				color: 0, 0, 0, 1
 				size_hint: .5, 0.1
-				text: "8.1"
+				text: "6.9"
 			Button:
-				size_hint: None, None
+				size_hint: None,None
 				size:157,35
-				background_normal:'button.png'
-				text: "Choose!"
-
+				text: "Pick Me"
+				background_normal:'button2.png'
 <Profile>
 	canvas:
 		Color: 

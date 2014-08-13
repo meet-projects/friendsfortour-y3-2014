@@ -1,4 +1,4 @@
-#:kivy 1.0.8 
+#:kivy 1.8.0 
    
 
 <FFTmain>:
@@ -19,21 +19,21 @@
 			Button:
 				size_hint: None, None
 				size:157,35
-				text: "Zidan awad"
-				font_name: './font.otf'
+				text: "Zidan Awad"
+				font_name: 'font2'
 				background_normal:'button2.png'
 			Label:
 				id: vol_rating
 				color: 0,0,0, 1
 				size_hint: .5, 0.1
 				text: "9.9"
-				font_name: 'font.otf'
+				font_name: './font2.ttf'
 			Button:
 				size_hint: None, None
 				size:157,35
+				text: "Zidan Awad"
+				font_name: 'font2'
 				background_normal:'button2.png'
-				text: "Choose me!!!"
-				font_name: 'font.otf'
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
