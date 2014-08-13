@@ -8,7 +8,7 @@
 		orientation: 'vertical'
 		GridLayout:
 			size_hint: 1, 1
-			padding:50
+			padding:90
 			cols: 2
 			AnchorLayout:
 				size_hint: 1, 0.47
@@ -340,9 +340,7 @@
 		Rectangle:
 			source: 'images/background2.jpg'
 			size: self.size
-			pos: 0, 0	
-	#Image:
-	#	source: 'images/background.jpg'
+			pos: 0, 0
 	AnchorLayout:
 		anchor_x: 'center'
 		anchor_y: 'center'
@@ -583,7 +581,7 @@
 		Label:
 			id: vol_rating
 			color: 0, 0, 0, 1
-			size_hint: .5, 0.1
+			#size_hint: .5, 0.1
 			text: "Age: 17"
 		Button:
 			#size_hint: None, None
