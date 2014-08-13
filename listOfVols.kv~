@@ -20,19 +20,19 @@
 				size_hint: None, None
 				size:157,35
 				text: "Zidan Awad"
-				font_name: 'font2'
+				
 				background_normal:'button2.png'
 			Label:
 				id: vol_rating
 				color: 0,0,0, 1
 				size_hint: .5, 0.1
 				text: "9.9"
-				font_name: './font2.ttf'
+
 			Button:
 				size_hint: None, None
 				size:157,35
 				text: "Zidan Awad"
-				font_name: 'font2'
+
 				background_normal:'button2.png'
 		BoxLayout:
 			orientation: 'horizontal'

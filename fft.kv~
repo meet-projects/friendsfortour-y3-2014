@@ -384,9 +384,9 @@
 				background_normal:'button2.png'
 			Label:
 				id: vol_rating
-				color: 0, 0, 0, 1
+				color: 1, 1, 1, 1
 				size_hint: .5, 0.1
-				text: "9.9"
+				text: " Rating: 9.9"
 			Button:
 				size_hint: None,None
 				size:157,35
@@ -398,12 +398,14 @@
 				size_hint: None,None
 				size:157,35
 				text: "Aseel Kassab"
+				font_name:'./font2.ttf'
 				background_normal:'button2.png'
 			Label:
+
 				id: vol_rating
-				color: 0, 0, 0, 1
+				color: 1,1,1,1
 				size_hint: .5, 0.1
-				text: "9.5"
+				text: "Rating: 9.5"
 			Button:
 				size_hint: None,None
 				size:157,35
@@ -419,9 +421,9 @@
 				on_press: app.change5()
 			Label:
 				id: vol_rating
-				color: 0, 0, 0, 1
+				color: 1,1,1,1
 				size_hint: .5, 0.1
-				text: "9.3"
+				text: "Rating: 9.3"
 			Button:
 				size_hint: None,None
 				size:157,35
@@ -431,14 +433,14 @@
 			orientation: 'horizontal'
 			Button:
 				size_hint: None,None
-				size:157,35
+				size:160,35
 				text: "Ido Silverwater"
 				background_normal:'button2.png'
 			Label:
 				id: vol_rating
-				color: 0, 0, 0, 1
+				color: 1,1,1,1
 				size_hint: .5, 0.1
-				text: "8.0"
+				text: "Rating: 8.0"
 			Button:
 				size_hint: None,None
 				size:157,35
@@ -453,9 +455,9 @@
 				background_normal:'button2.png'
 			Label:
 				id: vol_rating
-				color: 0, 0, 0, 1
+				color: 1,1,1,1
 				size_hint: .5, 0.1
-				text: "7.3"
+				text: "Rating: 7.3"
 			Button:
 				size_hint: None,None
 				size:157,35
@@ -470,9 +472,9 @@
 				background_normal:'button2.png'
 			Label:
 				id: vol_rating
-				color: 0, 0, 0, 1
+				color: 1,1,1,1
 				size_hint: .5, 0.1
-				text: "7.1"
+				text: "Rating: 7.1"
 			Button:
 				size_hint: None,None
 				size:157,35
@@ -487,9 +489,9 @@
 				background_normal:'button2.png'
 			Label:
 				id: vol_rating
-				color: 0, 0, 0, 1
+				color: 1,1,1,1
 				size_hint: .5, 0.1
-				text: "6.9"
+				text: "Rating: 6.9"
 			Button:
 				size_hint: None,None
 				size:157,35
