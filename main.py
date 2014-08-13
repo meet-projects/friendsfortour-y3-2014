@@ -38,14 +38,14 @@ class Chat(Screen):
 			i +=1 
 			self.ids.l10.text = self.ids.l12.text
 			self.ids.l12.text = ''
-			self.ids.l11.text = "                                               Thank You! I can't wait to meet you to!"
+			self.ids.l11.text = "                                  Thank You! I can't wait to meet you to!"
 		elif i==1:
 			self.ids.l6.text = self.ids.l8.text
 			self.ids.l8.text = self.ids.l10.text
 			self.ids.l10.text = self.ids.l12.text
 			self.ids.l7.text =  self.ids.l9.text
 			self.ids.l9.text = ''
-			self.ids.l11.text = "                         Great I'll see you then!"
+			self.ids.l11.text = "                 Great I'll see you then!"
 			self.ids.l12.text = ''
 
 	def g(self):
