@@ -8,7 +8,7 @@
 		orientation: 'vertical'
 		GridLayout:
 			size_hint: 1, 1
-			padding:50
+			padding:20
 			cols: 2
 			AnchorLayout:
 				size_hint: 1, 0.47
@@ -338,8 +338,7 @@
 #			on_press: app.change2()
 	Image:
 		source: 'images/background.jpg'
-		size_hint_y: None
-		height: dp(700)
+			
 	AnchorLayout:
 		anchor_x: 'center'
 		anchor_y: 'center'
@@ -392,7 +391,7 @@
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: .5,None
+				size_hint: .3,None
 				size:157,35
 				text: "Zidan Awad"
 				font_name:'./font2.ttf'
@@ -412,7 +411,7 @@
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: .5,None
+				size_hint: .3,None
 				size:157,35
 				text: "Aseel Kassab"
 				font_name:'./font2.ttf'
@@ -433,7 +432,7 @@
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: .5,None
+				size_hint: .3,None
 				size:157,35
 				text: "Noy Galron"
 				font_name:'./font2.ttf'
@@ -454,7 +453,7 @@
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: .5,None
+				size_hint: .3,None
 				size:160,35
 				text: "Ido Silverwater"
 				font_name:'./font2.ttf'
@@ -474,7 +473,7 @@
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: .5,None
+				size_hint: .3,None
 				size:157,35
 				text: "Moran Zaks"
 				font_name:'./font2.ttf'
@@ -494,7 +493,7 @@
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: .5,None
+				size_hint: .3,None
 				size:157,35
 				text: "Aviv Kaplan"
 				font_name:'./font2.ttf'
@@ -514,7 +513,7 @@
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: .5,None
+				size_hint: .3,None
 				size:157,35
 				text: "Saja Hriesh"
 				font_name:'./font2.ttf'
