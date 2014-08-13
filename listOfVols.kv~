@@ -9,7 +9,6 @@
 			pos: 0,0
 
 	BoxLayout:
-		
 		id: findvol_layout
 		pos: 40, 20
 		size: root.width - 80, root.height - 40
@@ -21,24 +20,27 @@
 				size_hint: None, None
 				size:157,35
 				text: "Zidan awad"
-				background_normal:'button.png'
+				font_name: './font.otf'
+				background_normal:'button2.png'
 			Label:
 				id: vol_rating
 				color: 0,0,0, 1
 				size_hint: .5, 0.1
 				text: "9.9"
+				font_name: 'font.otf'
 			Button:
 				size_hint: None, None
 				size:157,35
-				background_normal:'button.png'
+				background_normal:'button2.png'
 				text: "Choose me!!!"
+				font_name: 'font.otf'
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
 				size_hint: None, None
 				size:157,35
 				text: "Aseel Kassab"
-				background_normal:'button.png'
+				background_normal:'button2.png'
 			Label:
 				id: vol_rating
 				color: 0, 0, 0, 1
