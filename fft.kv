@@ -502,65 +502,56 @@
 		Rectangle:
 			size: root.width, root.height
 
-	BoxLayout:
+	GridLayout:
 		id: findvol_layout
+		cols: 2
 		#pos: 0, 0
 		#size: root.width - 80, root.height - 450
 		#spacing: 0.3
 		orientation:'vertical'
-		BoxLayout:
-			orientation: 'horizontal'
-			Image:
-				pos: 100, 100
-				source: "images/noy.jpg"
-				size_hint: .5, 4
-			Label:
-				id: vol_rating
-				color: 0, 0, 0, 1
-				size_hint: .5, 0.1
-				text: "Noy Galron"
-		BoxLayout:
-			orientation: 'horizontal'
-			Label:
-				id: vol_rating
-				color: 0, 0, 0, 1
-				size_hint: .5, 0.1
-				text: "noygalron@gmail.com"
-			Button:
-				size_hint: None, None
-				size:157,35
-				background_normal:'images/button2.png'
-				text: "PICK ME UP!!!"
-				on_press: app.change3()
-		BoxLayout:
-			orientation: 'horizontal'
-			Label:
-				id: vol_rating
-				color: 0, 0, 0, 1
-				size_hint: 0.4, 0.1
-				text: "Gender: Female"
-			Button:
-				size_hint: None, None
-				size:157,35
-				background_normal:'images/button2.png'
-				text: "City: Nazareth Illit"
-		BoxLayout:
-			orientation: 'horizontal'
-			Label:
-				id: vol_rating
-				color: 0, 0, 0, 1
-				size_hint: .5, 0.1
-				text: "Age: 17"
-			Button:
-				size_hint: None, None
-				size:157,35
-				background_normal:'images/button2.png'
-				background_down:'images/stars.jpg'
-				text: "Rate Me"
-		BoxLayout:
-			orientation: 'horizontal'
-			Label:
-				id: vol_rating
-				color: 0, 0, 0, 1
-				size_hint: .5, 0.1
-				text: "Languages: Hebrew, English"
+		Image:
+			pos: 100, 100
+			source: "images/noy.jpg"
+			#size_hint: .5, 4
+		Label:
+			id: vol_rating
+			color: 0, 0, 0, 1
+			#size_hint: .5, 0.1
+			text: "Noy Galron"
+		Label:
+			id: vol_rating
+			color: 0, 0, 0, 1
+			#size_hint: .5, 0.1
+			text: "noygalron@gmail.com"
+		Button:
+			#size_hint: None, None
+			#size:157,35
+			background_normal:'images/button2.png'
+			text: "PICK ME UP!!!"
+			on_press: app.change3()
+		Label:
+			id: vol_rating
+			color: 0, 0, 0, 1
+			#size_hint: 0.4, 0.1
+			text: "Gender: Female"
+		Button:
+			#size_hint: None, None
+			#size:157,35
+			background_normal:'images/button2.png'
+			text: "City: Nazareth Illit"
+		Label:
+			id: vol_rating
+			color: 0, 0, 0, 1
+			size_hint: .5, 0.1
+			text: "Age: 17"
+		Button:
+			#size_hint: None, None
+			#size:157,35
+			background_normal:'images/button2.png'
+			background_down:'images/stars.jpg'
+			text: "Rate Me"
+		Label:
+			id: vol_rating
+			color: 0, 0, 0, 1
+			#size_hint: .5, 0.1
+			text: "Languages: Hebrew, English"
