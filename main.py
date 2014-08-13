@@ -78,9 +78,9 @@ class FFTApp(App):
 		sm.current = 'find'
 	#def change2(self):
 	#	sm.current = 'news'
-	def change4(self)
+	def change4(self):
 		sm.current = 'list'
-	def change5(self)
+	def change5(self):
 		sm.current = 'profile'
 	def change3(self):
 		sm.current = 'chat'
