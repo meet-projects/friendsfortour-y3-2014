@@ -1,6 +1,88 @@
 #:kivy 1.8.0
 
-<NewsFeed>
+
+<Chat>:
+	BoxLayout:
+		id: upperBox
+		orientation: 'vertical'
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox
+			anchor_x: 'left'
+			Label:
+				size_hint: None, None
+				id:l0
+				text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox1
+			anchor_x: 'right'
+			Label:
+				size_hint: None, None
+				id:l1
+				text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox
+			anchor_x: 'left'
+			Label:
+				size_hint: None, None
+				id:l0
+				text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox1
+			anchor_x: 'right'
+			Label:
+				size_hint: None, None
+				id:l1
+				text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox
+			anchor_x: 'left'
+			Label:
+				size_hint: None, None
+				id:l0
+				text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox1
+			anchor_x: 'right'
+			Label:
+				size_hint: None, None
+				id:l1
+				text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox1
+			anchor_x: 'right'
+			Label:
+				size_hint: None, None
+				id:l11
+				text: ''
+		AnchorLayout:
+			size_hint: 1, 0.47
+			id: messageBox
+			anchor_x: 'left'
+			Label:
+				size_hint: None, None
+				id:l12
+				text: ''
+		BoxLayout:
+			size_hint: 1, 0.05
+			orientation: 'horizontal'
+			TextInput:
+				id: messageText
+				size_hint: 0.65, None
+				height: 35
+			Button:
+				text: "send"
+				size_hint: 0.35, None
+				height: messageText.height
+				on_press: root.g()
+
+<NewsFeed>:
 	background_color: 1,1,1,1
 	#BoxLayout:
 	#	orientation: 'vertical'
@@ -28,8 +110,10 @@
 				size_hint: None, None
 				size: 150, 95 
 				on_press: app.change()
-		NewsFeedScroll:
-		
+	
+		ScrollView:
+			id: moshe
+
 #		ScrollView:
 #			size_hint: None, None
 #			size: 400, 400
@@ -108,7 +192,7 @@
 #				text_size: self.width, None
 #				size_hint_y: None
 #				color: 0,0,0,1
-#				text: """ --> Ido posted a picture with Aseel .k.: we had a lot of fun today! \n --> Aviv shared his location at Misgav with Moran. \n --> Zidane posted a picture with Noy. \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja \n --> Aseel .a. shared her location at Nazareth with Saja"""		
+#				text: """ --> Ido posted a picture with Aseel .k.: we had a lot of fun today! \n --> Aviv shared his location at Misgav with Moran. \n --> Zidane posted a picture with Noy. \n --> Aseel .a. shared her location at Nazareth with Saja""" * 50		
 #				height: self.texture_size[1]
 
 	
@@ -124,8 +208,8 @@
 				anchor_x: 'right'
 				Button:
 					size: root.width/2, 40
-					text: "button"
-					on_press: app.change()
+					text: "bchat"
+					on_press: app.change3()
 
 
 
