@@ -72,7 +72,7 @@ class FFTApp(App):
 			examp = BoxLayout(size_hint_x=1, size_hint_y=None, height=100)
 			examp.add_widget(Label(text="moshe"+str(i)))
 			layout.add_widget(examp)
-		self.news.ids.moshe.add_widget(layout)
+		#self.news.ids.moshe.add_widget(layout)
 		#scroll = ScrollView(size_hint=(None,None), size=(400,400))
 		#scroll.add_widget(layout)
 		#self.news.add_widget(scroll)
@@ -82,9 +82,9 @@ class FFTApp(App):
 		sm.current = 'find'
 	#def change2(self):
 	#	sm.current = 'news'
-	def change4(self)
+	def change4(self):
 		sm.current = 'list'
-	def change5(self)
+	def change5(self):
 		sm.current = 'profile'
 	def change3(self):
 		sm.current = 'chat'
