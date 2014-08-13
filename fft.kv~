@@ -8,7 +8,7 @@
 		orientation: 'vertical'
 		GridLayout:
 			size_hint: 1, 1
-			padding:320
+			padding:50
 			cols: 2
 			AnchorLayout:
 				size_hint: 1, 0.47
@@ -387,7 +387,7 @@
 	ScrollView:
 		id: scrollView
 		size_hint: None, None
-		size: root.width/1.5, root.height
+		size: root.width, root.height
 		GridLayout:
 			cols: 1
 			id: findvol_layout
@@ -398,6 +398,12 @@
 			#orientation:'vertical'
 			minimum_height: self.height
 			BoxLayout:
+				canvas:
+					Color:
+						rgba: 1,0,0,1
+					Line:
+						width: 10
+						points: [self.pos_x, self.pos_y, self.pos_x + self.width, self.pos_y, self.pos_x + self. width, self.pos_y + self.height, self.pos_x, self.pos_y + self.height, self.pos_x, self.pos_y]
 				padding: 10
 				size_hint: 1, None
 				orientation: 'horizontal'

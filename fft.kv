@@ -389,6 +389,7 @@
 		size_hint: None, None
 		size: root.width, root.height
 		GridLayout:
+			padding: 5
 			cols: 1
 			id: findvol_layout
 			#pos: 40, 20
@@ -398,6 +399,12 @@
 			#orientation:'vertical'
 			minimum_height: self.height
 			BoxLayout:
+				canvas:
+					Color:
+						rgba: 0,0,0,1
+					Line:
+						width: 2
+						points: [self.x, self.y, self.x + self.width, self.y, self.x + self. width, self.y + self.height/1.75, self.x, self.y + self.height/1.75, self.x, self.y]
 				padding: 10
 				size_hint: 1, None
 				orientation: 'horizontal'
@@ -408,10 +415,10 @@
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 				Label:
-					id: vol_rating
+					id: vol_rating\n\n
 					color: 1, 1, 1, 1
 					size_hint: .5, 0.1
-					text: " Rating: 9.9"
+					text: " Rating: 9.9\n\n"
 					font_name:'./font2.ttf'
 				Button:
 					size_hint: .3,None
@@ -420,6 +427,12 @@
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 			BoxLayout:
+				canvas:
+					Color:
+						rgba: 0,0,0,1
+					Line:
+						width: 2
+						points: [self.x, self.y, self.x + self.width, self.y, self.x + self. width, self.y + self.height/1.75, self.x, self.y + self.height/1.75, self.x, self.y]
 				padding: 10
 				size_hint: 1, None
 				orientation: 'horizontal'
@@ -431,10 +444,10 @@
 					background_normal:'button2.png'
 				Label:
 #<<<<<<< HEAD
-					id: vol_rating
+					id: vol_rating\n\n
 					color: 1,1,1,1
 					size_hint: .5, 0.1
-					text: "Rating: 9.5"
+					text: "Rating: 9.5\n\n"
 					font_name:'./font2.ttf'
 				Button:
 					size_hint: .3,None
@@ -443,6 +456,12 @@
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 			BoxLayout:
+				canvas:
+					Color:
+						rgba: 0,0,0,1
+					Line:
+						width: 2
+						points: [self.x, self.y, self.x + self.width, self.y, self.x + self. width, self.y + self.height/1.75, self.x, self.y + self.height/1.75, self.x, self.y]
 				padding: 10
 				size_hint: 1, None
 				orientation: 'horizontal'
@@ -454,10 +473,10 @@
 					background_normal:'button2.png'
 					on_press: app.change5()
 				Label:
-					id: vol_rating
+					id: vol_rating\n\n
 					color: 1,1,1,1
 					size_hint: .5, 0.1
-					text: "Rating: 9.3"
+					text: "Rating: 9.3\n\n"
 					font_name:'./font2.ttf'
 				Button:
 					size_hint: .3,None
@@ -466,6 +485,12 @@
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 			BoxLayout:
+				canvas:
+					Color:
+						rgba: 0,0,0,1
+					Line:
+						width: 2
+						points: [self.x, self.y, self.x + self.width, self.y, self.x + self. width, self.y + self.height/1.75, self.x, self.y + self.height/1.75, self.x, self.y]
 				padding: 10
 				size_hint: 1, None
 				orientation: 'horizontal'
@@ -476,10 +501,10 @@
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 				Label:
-					id: vol_rating
+					id: vol_rating\n\n
 					color: 1,1,1,1
 					size_hint: .5, 0.1
-					text: "Rating: 8.0"
+					text: "Rating: 8.0\n\n"
 					font_name:'./font2.ttf'
 				Button:
 					size_hint: 0.3,None
@@ -488,6 +513,12 @@
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 			BoxLayout:
+				canvas:
+					Color:
+						rgba: 0,0,0,1
+					Line:
+						width: 2
+						points: [self.x, self.y, self.x + self.width, self.y, self.x + self. width, self.y + self.height/1.75, self.x, self.y + self.height/1.75, self.x, self.y]
 				padding: 10
 				size_hint: 1, None
 				orientation: 'horizontal'
@@ -498,10 +529,10 @@
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 				Label:
-					id: vol_rating
+					id: vol_rating\n\n
 					color: 1,1,1,1
 					size_hint: .5, 0.1
-					text: "Rating: 7.3"
+					text: "Rating: 7.3\n\n"
 					font_name:'./font2.ttf'
 				Button:
 					size_hint: 0.3,None
@@ -510,6 +541,12 @@
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 			BoxLayout:
+				canvas:
+					Color:
+						rgba: 0,0,0,1
+					Line:
+						width: 2
+						points: [self.x, self.y, self.x + self.width, self.y, self.x + self. width, self.y + self.height/1.75, self.x, self.y + self.height/1.75, self.x, self.y]
 				padding: 10
 				size_hint: 1, None
 				orientation: 'horizontal'
@@ -520,10 +557,10 @@
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 				Label:
-					id: vol_rating
+					id: vol_rating\n\n
 					color: 1,1,1,1
 					size_hint: .5, 0.1
-					text: "Rating: 7.1"
+					text: "Rating: 7.1\n\n"
 					font_name:'./font2.ttf'
 				Button:
 					size_hint: 0.3,None
@@ -532,6 +569,12 @@
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 			BoxLayout:
+				canvas:
+					Color:
+						rgba: 0,0,0,1
+					Line:
+						width: 2
+						points: [self.x, self.y, self.x + self.width, self.y, self.x + self. width, self.y + self.height/1.75, self.x, self.y + self.height/1.75, self.x, self.y]
 				padding: 10
 				size_hint: 1, None
 				orientation: 'horizontal'
@@ -542,10 +585,10 @@
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 				Label:
-					id: vol_rating
+					id: vol_rating\n\n
 					color: 1,1,1,1
 					size_hint: .5, 0.1
-					text: "Rating: 6.9"
+					text: "Rating: 6.9\n\n"
 					font_name:'./font2.ttf'
 				Button:
 					size_hint: 0.3,None
@@ -554,20 +597,26 @@
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 			BoxLayout:
+				canvas:
+					Color:
+						rgba: 0,0,0,1
+					Line:
+						width: 2
+						points: [self.x, self.y, self.x + self.width, self.y, self.x + self. width, self.y + self.height/1.75, self.x, self.y + self.height/1.75, self.x, self.y]
 				padding: 10
 				size_hint: 1, None
 				orientation: 'horizontal'
 				Button:
 					size_hint: 0.5,None
 					size:157,35
-					text: "Saja Hriesh"
+					text: "Razan Shalabi"
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 				Label:
-					id: vol_rating
+					id: vol_rating\n\n
 					color: 1,1,1,1
 					size_hint: .5, 0.1
-					text: "Rating: 6.9"
+					text: "Rating: 6.9\n\n"
 					font_name:'./font2.ttf'
 				Button:
 					size_hint: 0.3,None
@@ -576,20 +625,26 @@
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 			BoxLayout:
+				canvas:
+					Color:
+						rgba: 0,0,0,1
+					Line:
+						width: 2
+						points: [self.x, self.y, self.x + self.width, self.y, self.x + self. width, self.y + self.height/1.75, self.x, self.y + self.height/1.75, self.x, self.y]
 				padding: 10
 				size_hint: 1, None
 				orientation: 'horizontal'
 				Button:
 					size_hint: 0.5,None
 					size:157,35
-					text: "Saja Hriesh"
+					text: "Aseel Abu Rajab"
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 				Label:
-					id: vol_rating
+					id: vol_rating\n\n
 					color: 1,1,1,1
 					size_hint: .5, 0.1
-					text: "Rating: 6.9"
+					text: "Rating: 6.9\n\n"
 					font_name:'./font2.ttf'
 				Button:
 					size_hint: 0.3,None
@@ -598,20 +653,26 @@
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 			BoxLayout:
+				canvas:
+					Color:
+						rgba: 0,0,0,1
+					Line:
+						width: 2
+						points: [self.x, self.y, self.x + self.width, self.y, self.x + self. width, self.y + self.height/1.75, self.x, self.y + self.height/1.75, self.x, self.y]
 				padding: 10
 				size_hint: 1, None
 				orientation: 'horizontal'
 				Button:
 					size_hint: 0.5,None
 					size:157,35
-					text: "Saja Hriesh"
+					text: "Hanna Mualem"
 					font_name:'./font2.ttf'
 					background_normal:'button2.png'
 				Label:
-					id: vol_rating
+					id: vol_rating\n\n
 					color: 1,1,1,1
 					size_hint: .5, 0.1
-					text: "Rating: 6.9"
+					text: "Rating: 6.8\n\n"
 					font_name:'./font2.ttf'
 				Button:
 					size_hint: 0.3,None
