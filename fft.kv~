@@ -225,6 +225,7 @@
 		Rectangle:
 			size: root.width, root.height
 	GridLayout:
+		cols: 1
 		BoxLayout:
 			id: findvol_layout
 			size: root.width - 80, 200
@@ -248,7 +249,7 @@
 <ListVol>
 	canvas:
 		Rectangle:
-			source: 'map.jpg'
+			source: 'images/map.jpg'
 			size: self.size
 			pos: 0,0
 
@@ -423,13 +424,14 @@
 
 	BoxLayout:
 		id: findvol_layout
-		pos: 40, 300
-		size: root.width - 80, root.height - 450
-		spaceing:0.3
+		#pos: 0, 0
+		#size: root.width - 80, root.height - 450
+		#spacing: 0.3
 		orientation:'vertical'
 		BoxLayout:
 			orientation: 'horizontal'
 			Image:
+				pos: 100, 100
 				source: "images/noy.jpg"
 				size_hint: .5, 4
 			Label:

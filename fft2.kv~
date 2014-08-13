@@ -424,14 +424,13 @@
 
 	BoxLayout:
 		id: findvol_layout
-		#pos: 0, 0
-		#size: root.width - 80, root.height - 450
-		#spacing: 0.3
+		pos: 40, 300
+		size: root.width - 80, root.height - 450
+		spaceing:0.3
 		orientation:'vertical'
 		BoxLayout:
 			orientation: 'horizontal'
 			Image:
-				pos: 100, 100
 				source: "images/noy.jpg"
 				size_hint: .5, 4
 			Label:
