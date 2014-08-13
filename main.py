@@ -29,14 +29,19 @@ class Profile(Screen):
 class Chat(Screen):
 	def write(self, dt):
 		global i
-		if i==0:
+		if i==0: 
 			i +=1 
-			self.ids.l11.text = self.ids.l12.text
-			self.ids.l12.text = "every thing is fine"
+			self.ids.l10.text = self.ids.l12.text
+			self.ids.l11.text = "Thank You! I can't wait to meet you to!"
 		elif i==1:
-			self.ids.messageBox.add_widget(Label(text = "you suck"))
+			self.ids.l6.text = self.ids.l8.text
+			self.ids.l8.text = self.ids.l10.text
+			self.ids.l10.text = self.ids.l12 .text
+			self.ids.l11.text = "Great I'll see you then!"
 
 	def g(self):
+		self.ids.l8.text = self.ids.l10.text
+		self.ids.l9.text = self.ids.l11.text
 		self.ids.l12.text = self.ids.messageText.text
 		self.ids.messageText.text = ''
 		Clock.schedule_once(self.write, 4)
