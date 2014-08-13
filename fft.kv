@@ -336,29 +336,40 @@
 #		Button:
 #			text: "button2"
 #			on_press: app.change2()
-	canvas:
-		Color:
-			rgba: 255,255,255,255
-		Rectangle:
-			size: root.width, root.height
-	GridLayout:
-		cols: 1
-		BoxLayout:
+	Image:
+		source: 'images/background.jpg'
+			
+	AnchorLayout:
+		anchor_x: 'center'
+		anchor_y: 'center'
+		RelativeLayout:
+			#canvas:
+			#	Color:
+			#		rgba: 255,255,255,255
+			#	Rectangle:
+			#		size: root.width, root.height
+			#cols: 1
+			#pos_x:  root.width/2 - self.width/2
 			id: findvol_layout
-			size: root.width - 80, 200
-			pos: 40, root.height - 250
+			#size: 10, 10 
 			spacing: 30
-			orientation:'vertical'
+			#orientation:'vertical'
 			TextInput:
-				size_hint: 1, 0.05
+				size_hint: .9, None
+				pos: root.width/2 - self.width/2, 3*root.height/4
+				padding_x: 20
 				id: date_ti
 				text: "<Date>  "
 			TextInput:
-				size_hint: 1, 0.05
+				size_hint: .9, None
+				pos: root.width/2 - self.width/2, root.height/2
+				padding_x: 20
 				id: city_ti
 				text: "<City>  "
 			Button:
-				size_hint: 1, 0.05
+				size_hint: .6, None
+				pos: root.width/2 - self.width/2, root.height/4
+				padding_x: 20
 				text: "GO"
 				#on_press: root.displayTopRatedVols()
 				on_press: app.change4()
@@ -380,7 +391,7 @@
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: None,None
+				size_hint: .3,None
 				size:157,35
 				text: "Zidan Awad"
 				font_name:'./font2.ttf'
@@ -392,7 +403,7 @@
 				text: " Rating: 9.9"
 				font_name:'./font2.ttf'
 			Button:
-				size_hint: None,None
+				size_hint: .3,None
 				size:157,35
 				text: "Pick Me"
 				font_name:'./font2.ttf'
@@ -400,7 +411,7 @@
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: None,None
+				size_hint: .3,None
 				size:157,35
 				text: "Aseel Kassab"
 				font_name:'./font2.ttf'
@@ -413,7 +424,7 @@
 				text: "Rating: 9.5"
 				font_name:'./font2.ttf'
 			Button:
-				size_hint: None,None
+				size_hint: .3,None
 				size:157,35
 				text: "Pick Me"
 				font_name:'./font2.ttf'
@@ -421,7 +432,7 @@
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: None,None
+				size_hint: .3,None
 				size:157,35
 				text: "Noy Galron"
 				font_name:'./font2.ttf'
@@ -434,7 +445,7 @@
 				text: "Rating: 9.3"
 				font_name:'./font2.ttf'
 			Button:
-				size_hint: None,None
+				size_hint: .3,None
 				size:157,35
 				text: "Pick Me"
 				font_name:'./font2.ttf'
@@ -442,7 +453,7 @@
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: None,None
+				size_hint: .3,None
 				size:160,35
 				text: "Ido Silverwater"
 				font_name:'./font2.ttf'
@@ -454,7 +465,7 @@
 				text: "Rating: 8.0"
 				font_name:'./font2.ttf'
 			Button:
-				size_hint: None,None
+				size_hint: .3,None
 				size:157,35
 				text: "Pick Me"
 				font_name:'./font2.ttf'
@@ -462,7 +473,7 @@
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: None,None
+				size_hint: .3,None
 				size:157,35
 				text: "Moran Zaks"
 				font_name:'./font2.ttf'
@@ -474,7 +485,7 @@
 				text: "Rating: 7.3"
 				font_name:'./font2.ttf'
 			Button:
-				size_hint: None,None
+				size_hint: .3,None
 				size:157,35
 				text: "Pick Me"
 				font_name:'./font2.ttf'
@@ -482,7 +493,7 @@
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: None,None
+				size_hint: .3,None
 				size:157,35
 				text: "Aviv Kaplan"
 				font_name:'./font2.ttf'
@@ -494,7 +505,7 @@
 				text: "Rating: 7.1"
 				font_name:'./font2.ttf'
 			Button:
-				size_hint: None,None
+				size_hint: .3,None
 				size:157,35
 				text: "Pick Me"
 				font_name:'./font2.ttf'
@@ -502,7 +513,7 @@
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
-				size_hint: None,None
+				size_hint: .3,None
 				size:157,35
 				text: "Saja Hriesh"
 				font_name:'./font2.ttf'
@@ -514,7 +525,7 @@
 				text: "Rating: 6.9"
 				font_name:'./font2.ttf'
 			Button:
-				size_hint: None,None
+				size_hint: .3,None
 				size:157,35
 				text: "Pick Me"
 				font_name:'./font2.ttf'
@@ -542,6 +553,8 @@
 			color: 0, 0, 0, 1
 			#size_hint: .5, 0.1
 			text: "Noy Galron"
+			font_size: 30
+			font_name:'./font2.ttf'
 		Label:
 			id: vol_rating
 			color: 0, 0, 0, 1
@@ -578,4 +591,10 @@
 			id: vol_rating
 			color: 0, 0, 0, 1
 			#size_hint: .5, 0.1
-			text: "Languages: Hebrew, English"
+			text: "Languages: \nHebrew, English"
+		Button:				
+			size_hint: None, None
+			size:157,35
+			background_normal:'images/button2.png'
+			text: "Find a volunteer!!!"
+			on_press: app.change()
