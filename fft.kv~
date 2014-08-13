@@ -428,6 +428,7 @@
 				size:157,35
 				text: "Pick Me"
 				background_normal:'button2.png'
+				on_press: app.change5()
 		BoxLayout:
 			orientation: 'horizontal'
 			Button:
