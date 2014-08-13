@@ -8,6 +8,7 @@
 		orientation: 'vertical'
 		GridLayout:
 			size_hint: 1, 1
+			padding:20
 			cols: 2
 			AnchorLayout:
 				size_hint: 1, 0.47
@@ -181,6 +182,7 @@
 				size_hint: 1, 0.47
 				id: messageBox
 				anchor_x: 'right'
+
 				Label:
 					size_hint: None, None
 					id:l12
@@ -334,29 +336,40 @@
 #		Button:
 #			text: "button2"
 #			on_press: app.change2()
-	canvas:
-		Color:
-			rgba: 255,255,255,255
-		Rectangle:
-			size: root.width, root.height
-	GridLayout:
-		cols: 1
-		BoxLayout:
+	Image:
+		source: 'images/background.jpg'
+			
+	AnchorLayout:
+		anchor_x: 'center'
+		anchor_y: 'center'
+		RelativeLayout:
+			#canvas:
+			#	Color:
+			#		rgba: 255,255,255,255
+			#	Rectangle:
+			#		size: root.width, root.height
+			#cols: 1
+			#pos_x:  root.width/2 - self.width/2
 			id: findvol_layout
-			size: root.width - 80, 200
-			pos: 40, root.height - 250
+			#size: 10, 10 
 			spacing: 30
-			orientation:'vertical'
+			#orientation:'vertical'
 			TextInput:
-				size_hint: 1, 0.05
+				size_hint: .9, None
+				pos: root.width/2 - self.width/2, 3*root.height/4
+				padding_x: 20
 				id: date_ti
 				text: "<Date>  "
 			TextInput:
-				size_hint: 1, 0.05
+				size_hint: .9, None
+				pos: root.width/2 - self.width/2, root.height/2
+				padding_x: 20
 				id: city_ti
 				text: "<City>  "
 			Button:
-				size_hint: 1, 0.05
+				size_hint: .6, None
+				pos: root.width/2 - self.width/2, root.height/4
+				padding_x: 20
 				text: "GO"
 				#on_press: root.displayTopRatedVols()
 				on_press: app.change4()
