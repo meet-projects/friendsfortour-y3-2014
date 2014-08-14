@@ -38,7 +38,7 @@ class Chat(Screen):
 			i +=1 
 			self.ids.l10.text = self.ids.l12.text
 			self.ids.l12.text = ''
-			self.ids.l11.text = "Me too!!! meet you in 6"
+			self.ids.l11.text = "Me too!!! meet you at 6"
 		elif i==1:
 			self.ids.l6.text = self.ids.l8.text
 			self.ids.l8.text = self.ids.l10.text

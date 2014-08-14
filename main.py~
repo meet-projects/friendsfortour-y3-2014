@@ -45,7 +45,7 @@ class Chat(Screen):
 			self.ids.l10.text = self.ids.l12.text
 			self.ids.l7.text =  self.ids.l9.text
 			self.ids.l9.text = ''
-			self.ids.l11.text = "we are trying stuff..."
+			self.ids.l11.text = "^.^                    "
 			self.ids.l12.text = ''
 
 	def g(self):
